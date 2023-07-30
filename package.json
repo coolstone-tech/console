@@ -1,0 +1,31 @@
+{
+  "name": "console",
+  "version": "1.0.0",
+  "description": "Console app to view .log files in real time",
+  "author": "CoolStone Technologies",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^25.3.2",
+    "electron-builder": "^24.6.3"
+  },
+  "build": {
+    "fileAssociations": [
+      {
+        "ext": "log",
+        "name": "Log File",
+        "mimeType": "text/plain"
+      }
+    ],
+    "mac": {
+      "hardenedRuntime": true,
+      "target": [
+        {
+          "target": "mas",
+          "arch": [
+            "universal"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<head>
+<link rel="stylesheet" href="./style.css">
+</head>
+<div id="file-data">
+
+</div>
+
+<div id="opts">
+    <button onclick="window.electron.open()">Open</button> <button onclick="window.electron.clear()">Clear</button> <button onclick="window.electron.requestFileData()">Reload</button>
+</div>
+<script>
+    window.onload = window.electron.requestFileData
+</script>
